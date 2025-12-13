@@ -76,7 +76,6 @@ class ExperimentBinarySearchConfig(BinarySearchConfig):
         result = results[best_idx]
         # Return (success, result) - success is True if result >= threshold
         return result.result >= 0.5, result
-```
 
 # Run binary search
 configs = [ExperimentBinarySearchConfig(
