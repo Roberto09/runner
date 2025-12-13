@@ -2,8 +2,8 @@ import os
 import asyncio
 import multiprocessing as mp
 from concurrent.futures import ThreadPoolExecutor
-from runner.job import Job
-from typing import List, Dict, Any, Optional
+from runner.search_utils import Job
+from typing import List, Any, Optional
 from contextlib import redirect_stdout, redirect_stderr
 from dataclasses import dataclass
 
