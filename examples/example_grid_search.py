@@ -12,13 +12,9 @@ import copy
 import numpy as np
 import random
 
-
-class ConfigLike(Protocol):
-    def finalize(self) -> None: ...
-
 @pydraclass
 class ExperimentGridSearchConfig(GridSearchConfig):
-    def get_experiment_config_and_base_dir(self, seed: int) -> tuple[ConfigLike, str]:
+    def get_experiment_config_and_base_dir(self, seed: int) -> tuple[Any, str]:
         # Extract num_parameters and seed from prop_values (the property names come from sweep_props)
         config = copy.deepcopy(self.base_experiment_config)
         config.seed = seed
@@ -26,7 +22,7 @@ class ExperimentGridSearchConfig(GridSearchConfig):
         config.finalize()
         return config, config.base_dir
 
-    def run_experiment_config(self, config: ConfigLike) -> Any:
+    def run_experiment_config(self, config: Any) -> Any:
         # this should just run the experiment and return the result
         return run_experiment(config)
 
