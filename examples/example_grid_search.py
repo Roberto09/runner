@@ -1,5 +1,5 @@
 from typing import Any
-from configs import pydraclass, ConfigMeta
+from pydrafig import pydraclass, ConfigMeta
 from datetime import datetime
 from runner.gpu_utils import GPUJobResult
 from runner.grid_search import run_grid_searches

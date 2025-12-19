@@ -1,5 +1,5 @@
 from runner.configs.base_experiment_config import BaseExperimentConfig
-from configs import pydraclass, main
+from pydrafig import pydraclass, main
 import numpy as np
 import time
 

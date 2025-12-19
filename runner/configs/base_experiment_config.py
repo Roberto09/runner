@@ -1,4 +1,4 @@
-from configs import pydraclass
+from pydrafig import pydraclass
 
 @pydraclass
 class BaseExperimentConfig:

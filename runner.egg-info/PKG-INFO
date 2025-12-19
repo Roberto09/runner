@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: runner
+Version: 0.0.1
+Summary: runner
+Requires-Python: >=3.10
+Requires-Dist: torch>=2.1.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: PyYAML>=6.0.0
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: pydrafig>=0.1.1

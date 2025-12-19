@@ -1,4 +1,4 @@
-from configs import pydraclass, ConfigMeta
+from pydrafig import pydraclass, ConfigMeta
 from typing import Any
 from runner.gpu_utils import GPUJobResult
 

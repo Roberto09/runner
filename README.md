@@ -20,7 +20,7 @@ pip install -e .
 Create an experiment configuration and run function. Experiment configs must inherit from `BaseExperimentConfig`:
 
 ```python
-from configs import pydraclass, main
+from pydrafig import pydraclass, main
 from runner.configs.base_experiment_config import BaseExperimentConfig
 
 @pydraclass

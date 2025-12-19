@@ -14,7 +14,8 @@ dependencies = [
     "matplotlib>=3.7.0",  # Current: 3.10.3 - allow minor updates
     "PyYAML>=6.0.0",      # Current: 6.0.3 - allow minor updates
     "pandas>=2.0.0",      # Current: 2.3.3 - allow minor updates
+    "pydrafig>=0.1.1",
 ]
 
 [tool.setuptools]
-packages = ["runner", "configs"]
+packages = ["runner"]
